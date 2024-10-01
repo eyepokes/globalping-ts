@@ -1,7 +1,7 @@
 # workflow for re-running publishing to NPM in case it fails for some reason
 name: Publish NPM
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   publish:
