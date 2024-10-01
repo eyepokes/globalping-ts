@@ -27,7 +27,7 @@ export class Globalping {
     private apiToken: string | undefined;
     private cache: Cache;
     private debug: boolean = false;
-    private disableEtagCaching: boolean = true;
+    private disableEtagCaching: boolean = false;
 
     constructor(options: GlobalpingOptions | undefined = undefined) {
         if (options) {
