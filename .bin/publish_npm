@@ -7,9 +7,6 @@ npm config set '//registry.npmjs.org/:_authToken' "$NPM_TOKEN"
 # Build the project
 npm run build
 
-# Navigate to the dist directory
-cd dist
-
 # Get the version from package.json
 VERSION="$(node -p "require('./package.json').version")"
 
