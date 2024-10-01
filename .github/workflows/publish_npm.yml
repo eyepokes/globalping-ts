@@ -23,6 +23,6 @@ jobs:
 
       - name: Publish to NPM
         run: |
-          bash ./bin/publish_npm
+          bash .bin/publish_npm
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
