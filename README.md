@@ -3,7 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/globalping-ts.svg)](https://npmjs.org/package/globalping-ts) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/globalping-ts)
 
 This library provides access to the Globalping API from TypeScript or JavaScript.
-To learn how to use the Globalping API, check out [API Reference](https://www.jsdelivr.com/docs/api.globalping.io) and [Documentation](https://github.com/jsdelivr/globalping).
+To learn how to use the Globalping API, check out [API Reference](https://globalping.io/docs/api.globalping.io#overview) and [Documentation](https://github.com/jsdelivr/globalping).
 
 ## Installation
 
