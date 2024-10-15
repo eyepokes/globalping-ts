@@ -230,4 +230,33 @@ describe('Globalping', () => {
             console.log(JSON.stringify(response.headers, null, 4));
         }
     }).timeout(0);
+
+    it('limits() with and without token', async () => {
+        const api = new Globalping();
+
+        let response = await api.limits();
+
+        if (!response.success) {
+            console.log(JSON.stringify(response.error, null, 4));
+            return;
+        }
+
+        console.log(JSON.stringify(response.data, null, 4));
+
+        const api1 = new Globalping({
+            token: "api key",
+            maxCacheSize: 200,
+            disableEtagCaching: false,
+            debug: true
+        });
+
+        let response1 = await api1.limits();
+
+        if (!response1.success) {
+            console.log(JSON.stringify(response1.error, null, 4));
+            return;
+        }
+
+        console.log(JSON.stringify(response1.data, null, 4));
+    }).timeout(0);
 });

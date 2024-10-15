@@ -17,7 +17,7 @@ import { Cache } from './cache';
 export class Globalping {
     private host = 'api.globalping.io';
     private apiVersion = 1;
-    private requestHeaders = {
+    private requestHeaders: { [K: string]: string }  = {
         Accept: 'application/json',
         'Content-Type': 'application/json',
         'Accept-Encoding': 'br, gzip',
@@ -33,6 +33,7 @@ export class Globalping {
         if (options) {
             if (options.token !== undefined) {
                 this.apiToken = options.token;
+                this.requestHeaders["Authorization"] = `Bearer ${this.apiToken}`;
             }
 
             if (options.maxCacheSize !== undefined) {
