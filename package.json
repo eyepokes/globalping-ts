@@ -1,6 +1,6 @@
 {
     "name": "globalping-ts",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Typescript library for the Globalping API",
     "scripts": {
         "build": "tsc",
